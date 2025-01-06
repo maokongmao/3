@@ -1,0 +1,6 @@
+import requests
+
+url = "http://127.0.0.1:5000/predict"
+data = {"data": [1, 9, 9, 3, 1, 2, 8]}
+response = requests.post(url, json=data)
+print(response.json())
